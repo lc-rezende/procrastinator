@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hanging Around</title>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75633190-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="header-setup">
+      <div class="container">
+        <div class="jumbotron">
+          <h4>How much time would you like to kill (in seconds)? </h4>
+          <input type="text" id="seconds" data-toggle="no-tooltip" data-placement="left" title="e.g. 60 (1 minute)" style="text-align: center;" value=60></input> seconds <br/>
+          <p>2 minutes = 120 | 5 minutes = 300 | 10 minutes = 600 | other value...</p>
+          <hr>
+          <h4>Paste the URL of the logo image you want to use: </h4>
+          <input type="text" id="logo-address" value="http://www.mapsysinc.com/wp-content/uploads/2013/08/oracle-logo.gif"></input>
+          <hr>
+          <button type="button">START HANGING AROUND</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="process-run">
+      <div class="container">
+        <div class="jumbotron">
+          <div class="logo">
+
+          </div>
+          <h3>Checking database for errors...</h3>
+          <strong><span id="perc">0.00</span>% complete</strong>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progress-bar">
+            </div>
+          </div>
+
+          <div class="dbmessage">
+            <code>
+              DBVERIFY - Verification starting...<br/>
+              <br/>
+              Total Pages Examined         : <mark><span id="var1">0</span></mark><br/>
+              Total Pages Processed (Data) : <mark><span id="var2">0</span></mark><br/>
+              Total Pages Failing   (Data) : <mark><span id="var3">0</span></mark><br/>
+              Total Pages Processed (Index): <mark><span id="var4">0</span></mark><br/>
+              Total Pages Failing   (Index): <mark><span id="var5">0</span></mark><br/>
+              Total Pages Empty            : <mark><span id="var6">0</span></mark><br/>
+              Total Pages Marked Corrupt   : <mark><span id="var7">0</span></mark><br/>
+              <br/>
+              Total Pages Influx           : <mark><span id="var8">0</span></mark><br/>
+            </code>
+          </div>
+          <br/>
+          <p class="etc">Estimated time for completion: <mark><span id="etc">0</span> seconds</mark>.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

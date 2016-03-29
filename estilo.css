@@ -1,0 +1,39 @@
+
+.header-setup {
+  margin-top: 10px;
+}
+
+.header-setup button {
+  width: 200px;
+  height: 50px;
+  background: rgb(143, 175, 230);
+  border: none;
+  border-bottom: 4px solid rgb(117, 158, 230);
+  color: white;
+  margin-top: 10px;
+}
+
+.header-setup .jumbotron p {
+  margin-top: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.header-setup .jumbotron #logo-address {
+  width: 900px;
+}
+.process-run {
+  display: none;
+}
+
+.process-run .etc {
+  font-size: 12px;
+}
+
+.process-run .dbmessage {
+  font-size: 12px;
+}
+
+.process-run .logo img {
+  width: 300px;
+}
